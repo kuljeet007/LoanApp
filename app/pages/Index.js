@@ -35,6 +35,7 @@ import DrawerNavigation from "./DrawerNavigation";
 import Components from "../Screens/components";
 import LoanDetails from "./Loan/LoanDetails";
 import SignatureComponent from "./Status/SignatureComponent";
+import LoanDocumentGenerator from "./Status/LoanDocumentGenerator";
 
 
 const StackComponent = createStackNavigator();
@@ -88,6 +89,8 @@ const SocialNetworkPages = (props) => {
         <StackComponent.Screen name={"Components"} component={Components} />
         <StackComponent.Screen name={"LoanDetails"} component={LoanDetails} />
         <StackComponent.Screen name={"SignatureComponent"} component={SignatureComponent} />
+        <StackComponent.Screen name={"LoanDocumentGenerator"} component={LoanDocumentGenerator} />
+       
       </StackComponent.Navigator>
     </>
   );

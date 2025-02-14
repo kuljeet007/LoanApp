@@ -149,6 +149,7 @@ export const IMAGES = {
 	w3tubeWhite : require('../assets/images/global/w3tubeWhite.png'),
 	bgPattern : require('../assets/images/global/pattern.png'),
 	clients : require('../assets/images/global/clients.png'),
+	
 
 	//global icons start
 	react : require('../assets/images/global/icons/react.png'),

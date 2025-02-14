@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Image, SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native';
-import { useTheme } from '@react-navigation/native';
+import { useNavigation, useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { DrawerLayout } from 'react-native-gesture-handler';
 import DrawerMenu from '../layout/DrawerMenu';

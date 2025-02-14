@@ -40,6 +40,21 @@ const Categories = () => {
 
     const navigation = useNavigation();
 
+    const handleNavigation = (item) => {
+        // Navigate based on the item's ID
+        switch (item.id) {
+            case "1":
+                navigation.navigate('LoanDocumentGenerator', { title: item.title, bgColor: item.color, catIcon: item.icon });
+                break;
+            case "2":
+                navigation.navigate('AnotherComponent', { title: item.title, bgColor: item.color, catIcon: item.icon });
+                break;
+            
+            default:
+                navigation.navigate('DefaultComponent', { title: item.title, bgColor: item.color, catIcon: item.icon });
+        }
+    }
+
     const renderItem = ({item}) => {
         return(
             <View
@@ -49,7 +64,7 @@ const Categories = () => {
                 }}    
             >
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('SignatureComponent',{title : item.title, bgColor : item.color, catIcon : item.icon})}
+                    onPress={() => handleNavigation(item)}
                     style={{
                         paddingHorizontal:15,
                         paddingVertical:15,
